@@ -65,7 +65,7 @@ extension Request {
     ///
     /// - returns: The request.
     @discardableResult
-    public func response(
+    public func responseHandler(
         queue: DispatchQueue? = nil,
         completionHandler: @escaping (URLRequest?, HTTPURLResponse?, Data?, Error?) -> Void)
         -> Self
